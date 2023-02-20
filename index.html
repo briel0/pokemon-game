@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Who's That Pokémon</title>
+    <script src="script.js" defer></script>
+</head>
+<body onload="set_game()">
+    <header>
+        <img class="logo" src="assets/logo.png" alt="Who's That Pokémon">
+    </header>
+    <div class="imgbx">
+        <img class="image" src="assets/loading.png" alt="Pokémon Image">
+    </div>
+    <div class="options">
+        <button class="btn" onclick="check_answer(this.id)" id="btn0">
+            <img class="sprite0" src="assets/pokeball.png" alt="pokémon sprite" class="btn_sprite"> <h3 class="label0">OPTION</h3>
+        </button>
+        <button class="btn" onclick="check_answer(this.id)" id="btn1">
+            <img class="sprite1" src="assets/pokeball.png" alt="pokémon sprite" class="btn_sprite"> <h3 class="label1">OPTION</h3>
+        </button>
+        <button class="btn" onclick="check_answer(this.id)" id="btn2">
+            <img class="sprite2" src="assets/pokeball.png" alt="pokémon sprite" class="btn_sprite"> <h3 class="label2">OPTION</h3>
+        </button>
+        <button class="btn" onclick="check_answer(this.id)" id="btn3">
+            <img class="sprite3" src="assets/pokeball.png" alt="pokémon sprite" class="btn_sprite"> <h3 class="label3">OPTION</h3>
+        </button>
+    </div>
+</body>
+</html>

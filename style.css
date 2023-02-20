@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* RESETING CSS AND SETTING THE FONT */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* CONFIGURING THE PAGE */
+body{
+    background-image: linear-gradient(#E5F1EC, #bde2cc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+/* PAGE HEADER */
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.logo{
+    width: auto;
+    height: 12vh;
+}
+
+/* IMAGE CONTAINER */
+.imgbx{
+    height: 40vh;
+    width: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.image{
+    height: 40vh;
+    filter: grayscale(100%) brightness(0%);
+    overflow: hidden;
+    transition: 1s;
+}
+
+/* OPTIONS CONTAINER */
+.options{
+    width: 515px;
+    height: 155px;
+    column-count: 2;
+    margin: auto;
+}
+
+/* BUTTON STYLE */
+.btn{
+    background: #bde2cc;
+    width: 250px;
+    height: 65px;
+    padding: 5px;
+    margin: 0px 0px 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    box-shadow: 4px 4px;
+    transition: 0.5s;
+}
+
+/* SETTING BUTTON ANIMATION */
+.btn:active{
+    animation: shake 1s linear;
+}
+
+@keyframes shake{
+    0%{margin-left: 0px;}
+    25%{margin-left: 10px;}
+    50%{margin-left: 0px;}
+    75%{margin-left: -10px;}
+    100%{margin-left: 0px}
+}
+
+.btn:hover{
+    background: #a5c0da ;
+}
+
+/* FOR SMALLER SCREENS */
+@media (max-width: 450px){
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+
+    /* IMAGE CONTAINER */
+    .imgbx{
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .image{
+        height: 40vh;
+    }
+
+    /* OPTIONS CONTAINER */
+    .options{
+        width: 280px;
+        height: 290px;
+        padding: 5px;
+        column-count: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+    
+    /* BUTTON */
+    .btn{
+        width: 250px;
+        height: 55px;
+        margin: auto;
+    }
+
+}
