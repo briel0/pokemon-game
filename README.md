@@ -7,10 +7,10 @@ This is a simple "Who's That Pokemon?" game created using HTML, CSS, and JavaScr
 ## How to Play
 To start playing, simply guess the name of the Pokemon based on its silhouette. Click on the button to check if your answer is correct.
 
+If your answer is incorrect, the button will turn red and you can try again. If your answer is correct, an alert will be displayed on the screen congratulating you and the game will move on to the next Pokemon.
+
 ## Play the Game
 You can play the game by following this link: https://briel0.github.io/pokemon-game/
-
-If your answer is incorrect, the button will turn red and you can try again. If your answer is correct, an alert will be displayed on the screen congratulating you and the game will move on to the next Pokemon.
 
 ## PokeAPI
 This game uses the PokeAPI to generate a random Pokemon for each round. The PokeAPI is a free, open-source API that provides information on all Pokemon, including their names, types, stats, and images.
