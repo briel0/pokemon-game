@@ -4,13 +4,15 @@ var pokemon_image = document.querySelector(".image")
 
 function set_game(){
 
-    var options = Array(4);
+    var temp = new Set;
 
     // Getting four different pokémon ID
-    for(var i = 0; i < 4; i++){
+    while(temp.size < 4){
         var randint = Math.floor(Math.random() * 151) + 1
-        options[i] = randint
+        temp.add(randint)
     }
+
+    var options = Array.from(temp)
 
     // Getting the index of the right answer
     index_correct = Math.floor(Math.random() * 4)
